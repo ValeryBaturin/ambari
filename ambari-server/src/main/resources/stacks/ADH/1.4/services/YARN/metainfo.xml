@@ -22,12 +22,14 @@
     <service>
       <name>YARN</name>
       <version>2.7.3.1.4</version>
-    <quickLinksConfigurations>
+      <quickLinksConfigurations-dir>quicklinks-mapred</quickLinksConfigurations-dir>
+      <quickLinksConfigurations>
         <quickLinksConfiguration>
-            <fileName>quicklinks.json</fileName>
-            <default>true</default>
+          <fileName>quicklinks.json</fileName>
+          <default>true</default>
         </quickLinksConfiguration>
-    </quickLinksConfigurations>
+      </quickLinksConfigurations>
+
     </service>
   </services>
 </metainfo>

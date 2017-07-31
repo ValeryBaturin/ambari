@@ -4,7 +4,7 @@
   "configuration": {
     "protocol":
     {
-      "type":"http"
+      "type":"https"
     },
 
     "links": [
@@ -15,81 +15,25 @@
         "requires_user_name": "false",
         "port":{
           "http_property": "hbase.master.info.port",
-          "http_default_port": "60010",
+          "http_default_port": "16010",
           "https_property": "hbase.master.info.port",
-          "https_default_port": "60443",
+          "https_default_port": "16010",
           "regex": "",
-          "site": "hbase-site"
+          "site": "master-hbase-site"
         }
       },
       {
-        "name": "hbase_logs",
-        "label": "HBase Logs",
-        "url":"%@://%@:%@/logs",
+        "name": "hbase_regionserver_ui",
+        "label": "HBase Region Server",
+        "url":"%@://%@:%@/rs-status",
         "requires_user_name": "false",
         "port":{
-          "http_property": "hbase.master.info.port",
-          "http_default_port": "60010",
-          "https_property": "hbase.master.info.port",
-          "https_default_port": "60443",
+          "http_property": "hbase.regionserver.info.port",
+          "http_default_port": "16030",
+          "https_property": "hbase.regionserver.info.port",
+          "https_default_port": "16030",
           "regex": "",
-          "site": "hbase-site"
-        }
-      },
-      {
-        "name": "zookeeper_info",
-        "label": "Zookeeper Info",
-        "url":"%@://%@:%@/zk.jsp",
-        "requires_user_name": "false",
-        "port":{
-          "http_property": "hbase.master.info.port",
-          "http_default_port": "60010",
-          "https_property": "hbase.master.info.port",
-          "https_default_port": "60443",
-          "regex": "",
-          "site": "hbase-site"
-        }
-      },
-      {
-        "name": "hbase_master_jmx",
-        "label": "HBase Master JMX",
-        "url":"%@://%@:%@/jmx",
-        "requires_user_name": "false",
-        "port":{
-          "http_property": "hbase.master.info.port",
-          "http_default_port": "60010",
-          "https_property": "hbase.master.info.port",
-          "https_default_port": "60443",
-          "regex": "",
-          "site": "hbase-site"
-        }
-      },
-      {
-        "name": "debug_dump",
-        "label": "Debug Dump",
-        "url":"%@://%@:%@/dump",
-        "requires_user_name": "false",
-        "port":{
-          "http_property": "hbase.master.info.port",
-          "http_default_port": "60010",
-          "https_property": "hbase.master.info.port",
-          "https_default_port": "60443",
-          "regex": "",
-          "site": "hbase-site"
-        }
-      },
-      {
-        "name": "thread_stacks",
-        "label": "Thread Stacks",
-        "url":"%@://%@:%@/stacks",
-        "requires_user_name": "false",
-        "port":{
-          "http_property": "hbase.master.info.port",
-          "http_default_port": "60010",
-          "https_property": "hbase.master.info.port",
-          "https_default_port": "60443",
-          "regex": "",
-          "site": "hbase-site"
+          "site": "region-hbase-site"
         }
       }
     ]

@@ -24,7 +24,7 @@
           "http_property": "dfs.namenode.http-address",
           "http_default_port": "50070",
           "https_property": "dfs.namenode.https-address",
-          "https_default_port": "50470",
+          "https_default_port": "50070",
           "regex": "\\w*:(\\d+)",
           "site": "hdfs-site"
         }

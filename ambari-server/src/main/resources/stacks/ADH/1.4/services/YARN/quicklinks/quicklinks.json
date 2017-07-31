@@ -24,7 +24,7 @@
           "http_property": "yarn.resourcemanager.webapp.address",
           "http_default_port": "8088",
           "https_property": "yarn.resourcemanager.webapp.https.address",
-          "https_default_port": "8090",
+          "https_default_port": "8088",
           "regex": "\\w*:(\\d+)",
           "site": "yarn-site"
         }
@@ -36,9 +36,9 @@
         "url": "%@://%@:%@/logs",
         "port":{
           "http_property": "yarn.resourcemanager.webapp.address",
-          "http_default_port": "8088",
+          "http_default_port": "0",
           "https_property": "yarn.resourcemanager.webapp.https.address",
-          "https_default_port": "8090",
+          "https_default_port": "0",
           "regex": "\\w*:(\\d+)",
           "site": "yarn-site"
         }
@@ -50,9 +50,9 @@
         "url":"%@://%@:%@/jmx",
         "port":{
           "http_property": "yarn.resourcemanager.webapp.address",
-          "http_default_port": "8088",
+          "http_default_port": "0",
           "https_property": "yarn.resourcemanager.webapp.https.address",
-          "https_default_port": "8090",
+          "https_default_port": "0",
           "regex": "\\w*:(\\d+)",
           "site": "yarn-site"
         }
@@ -64,9 +64,9 @@
         "url":"%@://%@:%@/stacks",
         "port":{
           "http_property": "yarn.resourcemanager.webapp.address",
-          "http_default_port": "8088",
+          "http_default_port": "0",
           "https_property": "yarn.resourcemanager.webapp.https.address",
-          "https_default_port": "8090",
+          "https_default_port": "0",
           "regex": "\\w*:(\\d+)",
           "site": "yarn-site"
         }
